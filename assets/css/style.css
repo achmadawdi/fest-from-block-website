@@ -278,7 +278,108 @@ footer a{
     font-size: 50px;
 }
 
+.music-svg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.music-svg #pause-stream{
+    display: none;
+}
+
+.music-svg .active{
+    display: block;
+}
+
+.music-svg:hover .active{    
+    display: unset !important;
+}
+.music-svg a{
+    position: absolute;
+    font-size: 26px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    width: 45px;
+    height: 45px;
+    text-align: center;    
+    padding-left: 2px;
+    padding-top: 3px;
+    opacity: 1 !important;
+    transition: all 0.5s ease;
+    z-index: 2;
+}
+
+.music-svg a:hover{
+    opacity: 0.5 !important;
+    transition: all 0.5s ease;
+    
+}
+
+.line-svg{
+    transform: rotate(-180deg);
+    opacity: 0.5;
+}
+
+.btn-fill{
+    border-radius: 5px;
+    border: none;
+    background: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 2px 20px;
+    color: #000;
+}
+
+.btn-rounded{
+    border-radius: 5px;
+    border: 1px solid #fff;
+    background: rgba(255, 255, 255, 0);
+    font-size: 18px;
+    font-weight: 600;
+    padding: 2px 20px;
+    color: #fff;
+}
+
+.list-btn button:hover{
+    opacity: 0.5;
+    transition: all 0.5s ease;
+}
+.modal-play{
+    position: fixed;
+    top: 50%;
+    left: 50%;            
+    width: 500px;
+    height: auto;
+
+    padding: 30px 20px;
+    background-color: #000;
+    border: 1px solid white ;
+    border-radius: 5px;
+    color: #fff;
+
+    margin-top: -100px; 
+    margin-left: -250px;
+
+    z-index: 30;
+}
+.close-modal{
+    position: relative;
+    float: right;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    top: -30px;
+}
+
 @media only screen and (min-device-width : 360px) and (max-device-width : 640px)  {
+    .modal-play {
+        width: 250px;
+        margin-left: -115px;
+        margin-top: -160px;
+    }
     .top-nav{        
         width: 85% !important;
     }
@@ -305,7 +406,12 @@ footer a{
         line-height: 75px;
     }
     .music-svg{
-        padding: 0 !important;
+        padding: 0 !important;    
+        padding-bottom: 30px !important;
+    }
+    .player-control{
+        height: 180px;
+        padding-bottom: 50px !important;                
     }
     .home-row{
         margin-left: 30px !important;
