@@ -117,10 +117,6 @@ body{
     color: #FFFFFF;
 }
 
-.list-dj{
-
-}
-
 .dj{
     width: 338px;
     height: 408px;
@@ -280,4 +276,72 @@ footer a{
     text-transform: uppercase;
     font-weight: 600;
     font-size: 50px;
+}
+
+@media only screen and (min-device-width : 360px) and (max-device-width : 640px)  {
+    .top-nav{        
+        width: 85% !important;
+    }
+    .side-nav .line{
+        height: 35px !important;
+    }
+    .side-nav{        
+        background: #ffffff00;
+        width: 50px;
+    }
+    .side-nav img{
+        width: 60px;
+        height: 60px;
+    }
+    .list-dj{
+        display: none;
+    }
+    .hosted-server h1{
+        font-size: 30px;
+    }
+    
+    .title h1 {    
+        font-size: 80px;      
+        line-height: 75px;
+    }
+    .music-svg{
+        padding: 0 !important;
+    }
+    .home-row{
+        margin-left: 30px !important;
+    }
+    .music-svg svg{
+        width: 230px;
+    }
+    .title {
+        padding-top: 40px !important;
+    }
+
+    .dj .content-border {
+        width: 270px;
+        height: 270px;        
+    }
+
+    .dj.active .detail {
+        opacity: 0;
+        width: 270px !important;            
+    }
+
+    .dj .detail {
+        opacity: 0;        
+        width: 270px !important;    
+    }
+
+    .dj:hover .detail {
+        opacity: 0;
+        width: 270px !important;    
+    }
+
+    .slick-active .detail {
+        width: 270px !important;    
+        padding: 10px;
+        height: 75px;        
+        color: #FFFFFF !important;
+        opacity: 1 !important;
+    }
 }
