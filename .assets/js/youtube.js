@@ -14,12 +14,11 @@ function onYouTubeIframeAPIReady() {
         height: '390',
         width: '640',
         videoId: 'B43lQTLA1oQ',
-        autoplau: false,
+        autoplay: false,
         playerVars: {
             'playsinline': 1
         },
-        events: {
-            'onReady': onPlayerReady,
+        events: {            
             'onStateChange': onPlayerStateChange
         }
     });
